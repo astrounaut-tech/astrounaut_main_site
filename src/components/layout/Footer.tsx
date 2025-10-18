@@ -45,21 +45,22 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-900 dark:bg-gray-950 text-white">
       <div className="container-custom py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-gradient">Astrounaut</h3>
-            <p className="text-gray-400">
-              Your trusted business partner, providing innovative solutions and exceptional service.
+            <p className="text-gray-400 dark:text-gray-500">
+              Your trusted business partner, providing innovative solutions and
+              exceptional service.
             </p>
             <div className="flex space-x-4">
               {navigation.social.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-gray-400 dark:text-gray-500 hover:text-white transition-colors"
                 >
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />
@@ -67,7 +68,7 @@ export default function Footer() {
               ))}
             </div>
           </div>
-          
+
           {/* Quick Links */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Quick Links</h4>
@@ -76,7 +77,7 @@ export default function Footer() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="text-gray-400 dark:text-gray-500 hover:text-white transition-colors"
                   >
                     {item.name}
                   </Link>
@@ -84,22 +85,22 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          
+
           {/* Services */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Services</h4>
-            <ul className="space-y-2 text-gray-400">
+            <ul className="space-y-2 text-gray-400 dark:text-gray-500">
               <li>Web Development</li>
               <li>UI/UX Design</li>
               <li>Business Analytics</li>
               <li>Mobile Solutions</li>
             </ul>
           </div>
-          
+
           {/* Contact Info */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Contact</h4>
-            <div className="space-y-3 text-gray-400">
+            <div className="space-y-3 text-gray-400 dark:text-gray-500">
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />
                 <span>hello@astrounaut.com</span>
@@ -115,8 +116,8 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+
+        <div className="border-t border-gray-800 dark:border-gray-700 mt-12 pt-8 text-center text-gray-400 dark:text-gray-500">
           <p>&copy; 2024 Astrounaut. All rights reserved.</p>
         </div>
       </div>
