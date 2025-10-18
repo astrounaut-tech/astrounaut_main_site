@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import '@/styles/globals.css';
 import CustomCursor from '@/components/common/CustomCursor';
+import { ThemeProvider } from '@/components/providers/ThemeProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -53,10 +54,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body className={inter.className}>
-        <CustomCursor />
-        {children}
+        <ThemeProvider>
+          <CustomCursor />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
