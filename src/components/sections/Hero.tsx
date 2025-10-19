@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles } from 'lucide-react';
+import { TextReveal } from '@/components/common/TextReveal';
 
 export default function Hero() {
   return (
@@ -44,11 +45,15 @@ export default function Hero() {
               className="flex flex-col sm:flex-row gap-4"
             >
               <button className="btn-primary inline-flex items-center gap-2 text-lg px-8 py-4">
-                Get Started
+                <TextReveal className="text-white font-medium text-lg">
+                  Get Started
+                </TextReveal>
                 <ArrowRight className="h-5 w-5" />
               </button>
               <button className="btn-secondary inline-flex items-center gap-2 text-lg px-8 py-4">
-                Learn More
+                <TextReveal className="text-secondary-900 dark:text-gray-100 font-medium text-lg">
+                  Learn More
+                </TextReveal>
               </button>
             </motion.div>
           </motion.div>

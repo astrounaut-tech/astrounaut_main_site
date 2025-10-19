@@ -10,6 +10,7 @@ import {
   Zap,
   ArrowRight,
 } from 'lucide-react';
+import { TextReveal } from '@/components/common/TextReveal';
 
 const services = [
   {
@@ -162,7 +163,9 @@ export default function Services() {
               comprehensive services.
             </p>
             <button className="btn-primary inline-flex items-center gap-2 text-lg px-8 py-4">
-              Schedule a Consultation
+              <TextReveal className="text-white font-medium text-lg">
+                Schedule a Consultation
+              </TextReveal>
               <ArrowRight className="h-5 w-5" />
             </button>
           </div>
