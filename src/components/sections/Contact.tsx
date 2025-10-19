@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Clock, MessageSquare } from 'lucide-react';
+import { TextReveal } from '@/components/common/TextReveal';
 
 const contactInfo = [
   {
@@ -172,7 +173,9 @@ export default function Contact() {
                 type="submit"
                 className="btn-primary inline-flex items-center gap-2 text-lg px-8 py-4 w-full sm:w-auto"
               >
-                Send Message
+                <TextReveal className="text-white font-medium text-lg">
+                  Send Message
+                </TextReveal>
                 <Send className="h-5 w-5" />
               </button>
             </form>
@@ -229,7 +232,6 @@ export default function Contact() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              viewport={{ once: true }}
               className="bg-gradient-to-r from-primary-600 to-primary-700 dark:from-primary-500 dark:to-primary-600 rounded-2xl p-8 text-white"
             >
               <h4 className="text-xl font-bold mb-4">

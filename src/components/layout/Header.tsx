@@ -5,11 +5,13 @@ import Link from 'next/link';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useTheme } from '@/components/providers/ThemeProvider';
+import { TextReveal } from '@/components/common/TextReveal';
 
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '#about' },
   { name: 'Services', href: '#services' },
+  { name: 'Portfolio', href: '/portfolio' },
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -60,7 +62,9 @@ export default function Header() {
                 href={item.href}
                 className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
               >
-                {item.name}
+                <TextReveal className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-400">
+                  {item.name}
+                </TextReveal>
               </Link>
             ))}
           </div>
@@ -80,7 +84,9 @@ export default function Header() {
             </button>
 
             <Link href="#contact" className="btn-primary">
-              Get Started
+              <TextReveal className="text-white font-medium">
+                Get Started
+              </TextReveal>
             </Link>
           </div>
         </div>
@@ -114,7 +120,9 @@ export default function Header() {
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
                       onClick={() => setMobileMenuOpen(false)}
                     >
-                      {item.name}
+                      <TextReveal className="text-base font-semibold leading-7 text-gray-900 dark:text-gray-100">
+                        {item.name}
+                      </TextReveal>
                     </Link>
                   ))}
                 </div>
@@ -124,7 +132,9 @@ export default function Header() {
                     className="btn-primary w-full text-center block"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    Get Started
+                    <TextReveal className="text-white font-medium">
+                      Get Started
+                    </TextReveal>
                   </Link>
                 </div>
               </div>
