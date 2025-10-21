@@ -20,7 +20,7 @@ export default function Header() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <header className="bg-white dark:bg-gray-900 shadow-sm sticky top-0 z-50 transition-colors duration-200">
+    <header className="bg-white dark:bg-[#0d1117] shadow-sm sticky top-0 z-50 transition-colors duration-200">
       <nav className="container-custom" aria-label="Global">
         <div className="flex items-center justify-between h-16">
           <div className="flex lg:flex-1">
@@ -94,7 +94,7 @@ export default function Header() {
         {/* Mobile menu */}
         <div className={cn('lg:hidden', mobileMenuOpen ? 'block' : 'hidden')}>
           <div className="fixed inset-0 z-50" />
-          <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white dark:bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:sm:ring-gray-100/10 transition-colors duration-200">
+          <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white dark:bg-[#0d1117] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:sm:ring-[#30363d] transition-colors duration-200">
             <div className="flex items-center justify-between">
               <Link href="/" className="-m-1.5 p-1.5">
                 <span className="text-xl font-bold text-gradient">

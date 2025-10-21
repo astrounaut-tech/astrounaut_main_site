@@ -1,3 +1,4 @@
+// /Users/dev-harsh0218/Business/Astrounaut/main-site/src/components/sections/About.tsx
 'use client';
 
 import { motion } from 'framer-motion';
@@ -32,7 +33,7 @@ const features = [
 
 export default function About() {
   return (
-    <section id="about" className="section-padding bg-white dark:bg-gray-900">
+    <section id="about" className="section-padding bg-white dark:bg-[#0b0f14] ">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -45,8 +46,8 @@ export default function About() {
             About <span className="text-gradient">Astrounaut</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            We're a passionate team dedicated to helping businesses thrive in
-            the digital age. With innovative solutions and personalized service,
+            We're a passionate team dedicated to helping businesses thrive in the
+            digital age. With innovative solutions and personalized service,
             we're your trusted partner for success.
           </p>
         </motion.div>
@@ -59,9 +60,9 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="text-center p-6 rounded-2xl bg-gradient-to-br from-primary-50 to-white dark:from-gray-800 dark:to-gray-700 hover:shadow-lg transition-all duration-300"
+              className="text-center p-6 rounded-2xl bg-gradient-to-br from-primary-50 to-white dark:from-[#161b22] dark:to-[#161b22] hover:shadow-lg transition-all duration-300 border border-transparent dark:border-[#30363d]"
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 dark:bg-primary-900 rounded-full mb-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 dark:bg-[#0f1a24] rounded-full mb-4">
                 <feature.icon className="h-8 w-8 text-primary-600 dark:text-primary-400" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
@@ -81,7 +82,7 @@ export default function About() {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <div className="bg-gradient-to-r from-primary-50 to-secondary-50 dark:from-gray-800 dark:to-gray-700 rounded-3xl p-8 lg:p-12">
+          <div className="bg-gradient-to-r from-primary-50 to-secondary-50 dark:from-[#0f1a24] dark:to-[#0e1720] rounded-3xl p-8 lg:p-12">
             <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-6">
               Our Mission
             </h3>

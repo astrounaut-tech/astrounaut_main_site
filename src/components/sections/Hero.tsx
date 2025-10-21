@@ -1,3 +1,4 @@
+// /Users/dev-harsh0218/Business/Astrounaut/main-site/src/components/sections/Hero.tsx
 'use client';
 
 import { motion } from 'framer-motion';
@@ -6,7 +7,7 @@ import { TextReveal } from '@/components/common/TextReveal';
 
 export default function Hero() {
   return (
-    <section className="relative bg-gradient-to-br from-primary-50 to-white dark:from-gray-900 dark:to-gray-800 section-padding">
+    <section className="relative bg-gradient-to-br from-primary-50 to-white dark:from-[#0b0f14] dark:to-[#0b0f14] section-padding">
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -20,7 +21,7 @@ export default function Hero() {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="inline-flex items-center gap-2 bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 px-4 py-2 rounded-full text-sm font-medium"
+                className="inline-flex items-center gap-2 bg-primary-100 dark:bg-[#161b22] text-primary-800 dark:text-primary-200 px-4 py-2 rounded-full text-sm font-medium"
               >
                 <Sparkles className="h-4 w-4" />
                 Welcome to the Future
@@ -64,7 +65,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative"
           >
-            <div className="aspect-square bg-gradient-to-br from-primary-400 to-primary-600 dark:from-primary-500 dark:to-primary-700 rounded-3xl shadow-2xl flex items-center justify-center">
+            <div className="aspect-square bg-gradient-to-br from-primary-400 to-primary-600 dark:from-[#0f1a24] dark:to-[#0e1720] rounded-3xl shadow-2xl flex items-center justify-center">
               <div className="text-white text-center space-y-4">
                 <div className="text-6xl font-bold">🚀</div>
                 <h3 className="text-2xl font-semibold">Astrounaut</h3>
