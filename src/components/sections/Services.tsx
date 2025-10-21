@@ -1,3 +1,4 @@
+// /Users/dev-harsh0218/Business/Astrounaut/main-site/src/components/sections/Services.tsx
 'use client';
 
 import { motion } from 'framer-motion';
@@ -10,7 +11,6 @@ import {
   Zap,
   ArrowRight,
 } from 'lucide-react';
-import { TextReveal } from '@/components/common/TextReveal';
 
 const services = [
   {
@@ -86,7 +86,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="section-padding bg-gradient-to-br from-primary-50 to-white dark:from-gray-900 dark:to-gray-800"
+      className="section-padding bg-gradient-to-br from-primary-50 to-white dark:from-[#0b0f14] dark:to-[#0b0f14]"
     >
       <div className="container-custom">
         <motion.div
@@ -114,9 +114,9 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700"
+              className="bg-white dark:bg-[#161b22] rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-[#30363d]"
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 dark:bg-primary-900 rounded-full mb-6">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 dark:bg-[#0f1a24] rounded-full mb-6">
                 <service.icon className="h-8 w-8 text-primary-600 dark:text-primary-400" />
               </div>
 
@@ -154,7 +154,7 @@ export default function Services() {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <div className="bg-white dark:bg-gray-800 rounded-3xl p-8 lg:p-12 shadow-sm border border-gray-100 dark:border-gray-700">
+          <div className="bg-white dark:bg-[#161b22] rounded-3xl p-8 lg:p-12 shadow-sm border border-gray-100 dark:border-[#30363d]">
             <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-6">
               Ready to Get Started?
             </h3>
@@ -163,9 +163,7 @@ export default function Services() {
               comprehensive services.
             </p>
             <button className="btn-primary inline-flex items-center gap-2 text-lg px-8 py-4">
-              <TextReveal className="text-white font-medium text-lg">
-                Schedule a Consultation
-              </TextReveal>
+              Schedule a Consultation
               <ArrowRight className="h-5 w-5" />
             </button>
           </div>

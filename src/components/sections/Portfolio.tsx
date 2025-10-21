@@ -239,54 +239,8 @@ export default function Portfolio() {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
-      {/* Hero Section */}
-      <section className="relative section-padding bg-gradient-to-br from-primary-50 via-white to-secondary-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 overflow-hidden">
-        {/* Creative Background Elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          {/* Floating Geometric Shapes */}
-          <motion.div
-            animate={{
-              y: [0, -20, 0],
-              rotate: [0, 5, 0],
-            }}
-            transition={{
-              duration: 6,
-              repeat: Infinity,
-              ease: 'easeInOut',
-            }}
-            className="absolute top-20 left-10 w-16 h-16 bg-primary-200 dark:bg-primary-800 rounded-full opacity-30 blur-sm"
-          />
-          <motion.div
-            animate={{
-              y: [0, 20, 0],
-              rotate: [0, -5, 0],
-            }}
-            transition={{
-              duration: 8,
-              repeat: Infinity,
-              ease: 'easeInOut',
-            }}
-            className="absolute top-40 right-20 w-12 h-12 bg-secondary-200 dark:bg-secondary-800 rounded-lg opacity-40 blur-sm"
-          />
-          <motion.div
-            animate={{
-              y: [0, -15, 0],
-              rotate: [0, 10, 0],
-            }}
-            transition={{
-              duration: 7,
-              repeat: Infinity,
-              ease: 'easeInOut',
-            }}
-            className="absolute bottom-20 left-1/4 w-8 h-8 bg-primary-300 dark:bg-primary-700 rounded-full opacity-50 blur-sm"
-          />
-
-          {/* Gradient Orbs */}
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-primary-200 to-primary-400 dark:from-primary-900 dark:to-primary-700 rounded-full opacity-20 blur-3xl" />
-          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-secondary-200 to-secondary-400 dark:from-secondary-800 dark:to-secondary-600 rounded-full opacity-20 blur-3xl" />
-        </div>
-
+    <div className="min-h-screen bg-white dark:bg-[#0d1117]">
+      <section className="relative section-padding bg-gradient-to-br from-primary-50 to-white dark:from-[#0b0f14] dark:to-[#0b0f14] overflow-hidden">
         <div className="container-custom relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -323,15 +277,15 @@ export default function Portfolio() {
               className="flex flex-col sm:flex-row gap-6 justify-center items-center"
             >
               <div className="flex items-center gap-6 text-gray-600 dark:text-gray-400">
-                <div className="flex items-center gap-2 bg-white dark:bg-gray-800 px-4 py-2 rounded-full shadow-sm">
+                <div className="flex items-center gap-2 bg-white dark:bg-[#161b22] px-4 py-2 rounded-full shadow-sm">
                   <Users className="h-5 w-5 text-primary-600" />
                   <span className="text-sm font-medium">50+ Projects</span>
                 </div>
-                <div className="flex items-center gap-2 bg-white dark:bg-gray-800 px-4 py-2 rounded-full shadow-sm">
+                <div className="flex items-center gap-2 bg-white dark:bg-[#161b22] px-4 py-2 rounded-full shadow-sm">
                   <TrendingUp className="h-5 w-5 text-green-600" />
                   <span className="text-sm font-medium">98% Success</span>
                 </div>
-                <div className="flex items-center gap-2 bg-white dark:bg-gray-800 px-4 py-2 rounded-full shadow-sm">
+                <div className="flex items-center gap-2 bg-white dark:bg-[#161b22] px-4 py-2 rounded-full shadow-sm">
                   <Code className="h-5 w-5 text-purple-600" />
                   <span className="text-sm font-medium">15+ Tech Stacks</span>
                 </div>
@@ -356,7 +310,7 @@ export default function Portfolio() {
                   'relative flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-all duration-300 overflow-hidden',
                   activeCategory === category.id
                     ? 'text-white shadow-lg shadow-primary-600/25'
-                    : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 shadow-sm'
+                    : 'bg-white dark:bg-[#161b22] text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 shadow-sm'
                 )}
               >
                 {activeCategory === category.id && (
@@ -397,7 +351,7 @@ export default function Portfolio() {
                     onMouseEnter={() => setHoveredProject(project.id)}
                     onMouseLeave={() => setHoveredProject(null)}
                   >
-                    <div className="relative bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-700 h-full">
+                    <div className="relative bg-white dark:bg-[#161b22] rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-[#30363d] h-full">
                       {/* Creative Project Visual */}
                       <div className="relative">
                         <div
@@ -469,7 +423,7 @@ export default function Portfolio() {
                           )}
 
                           <div className="absolute top-4 right-4">
-                            <div className="flex items-center gap-1 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
+                            <div className="flex items-center gap-1 bg-white/90 dark:bg-[#161b22]/90 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
                               {CategoryIcon && (
                                 <CategoryIcon className="h-3 w-3 text-primary-600" />
                               )}
@@ -480,7 +434,7 @@ export default function Portfolio() {
                           </div>
 
                           <div className="absolute bottom-4 left-4">
-                            <div className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
+                            <div className="bg-white/90 dark:bg-[#161b22]/90 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
                               <span className="text-xs font-bold text-gray-900 dark:text-white">
                                 {project.year}
                               </span>
@@ -502,7 +456,7 @@ export default function Portfolio() {
                             animate={{
                               opacity: hoveredProject === project.id ? 1 : 0,
                             }}
-                            className="absolute inset-0 bg-gradient-to-br from-primary-600/95 to-primary-700/95 flex items-center justify-center gap-6"
+                            className="absolute inset-0 bg-primary-600/95 flex items-center justify-center gap-6"
                           >
                             <motion.a
                               href={project.liveUrl}
@@ -582,7 +536,7 @@ export default function Portfolio() {
                             </motion.span>
                           ))}
                           {project.technologies.length > 3 && (
-                            <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs rounded-full">
+                            <span className="px-2 py-1 bg-gray-100 dark:bg-[#161b22] text-gray-600 dark:text-gray-300 text-xs rounded-full">
                               +{project.technologies.length - 3}
                             </span>
                           )}
@@ -631,7 +585,7 @@ export default function Portfolio() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="mt-20 text-center"
           >
-            <div className="relative bg-gradient-to-r from-primary-600 via-primary-700 to-primary-800 dark:from-primary-500 dark:via-primary-600 dark:to-primary-700 rounded-3xl p-8 lg:p-12 text-white overflow-hidden">
+            <div className="relative bg-gradient-to-r from-primary-600 via-primary-700 to-primary-800 dark:from-[#0f1a24] dark:via-[#0e1720] dark:to-[#0f1a24] rounded-3xl p-8 lg:p-12 text-white overflow-hidden">
               {/* Creative Background Pattern */}
               <div className="absolute inset-0 opacity-10">
                 <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1),transparent_50%)]" />

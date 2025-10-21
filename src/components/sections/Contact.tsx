@@ -1,9 +1,9 @@
+// /Users/dev-harsh0218/Business/Astrounaut/main-site/src/components/sections/Contact.tsx
 'use client';
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Clock, MessageSquare } from 'lucide-react';
-import { TextReveal } from '@/components/common/TextReveal';
 
 const contactInfo = [
   {
@@ -42,7 +42,6 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
     console.log('Form submitted:', formData);
   };
 
@@ -56,7 +55,10 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="section-padding bg-white dark:bg-gray-900">
+    <section
+      id="contact"
+      className="section-padding bg-white dark:bg-[#0b0f14]"
+    >
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -81,10 +83,10 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="bg-gradient-to-br from-primary-50 to-white dark:from-gray-800 dark:to-gray-700 rounded-3xl p-8 lg:p-12"
+            className="bg-gradient-to-br from-primary-50 to-white dark:from-[#0f1a24] dark:to-[#0e1720] rounded-3xl p-8 lg:p-12"
           >
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center">
+              <div className="w-12 h-12 bg-primary-100 dark:bg-[#0f1a24] rounded-full flex items-center justify-center">
                 <MessageSquare className="h-6 w-6 text-primary-600 dark:text-primary-400" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
@@ -108,7 +110,7 @@ export default function Contact() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-200 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+                    className="w-full px-4 py-3 border border-gray-200 dark:border-[#30363d] rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors bg-white dark:bg-[#161b22] text-gray-900 dark:text-white"
                     placeholder="John Doe"
                   />
                 </div>
@@ -126,7 +128,7 @@ export default function Contact() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-200 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+                    className="w-full px-4 py-3 border border-gray-200 dark:border-[#30363d] rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors bg-white dark:bg-[#161b22] text-gray-900 dark:text-white"
                     placeholder="john@company.com"
                   />
                 </div>
@@ -145,7 +147,7 @@ export default function Contact() {
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-200 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+                  className="w-full px-4 py-3 border border-gray-200 dark:border-[#30363d] rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors bg-white dark:bg-[#161b22] text-gray-900 dark:text-white"
                   placeholder="Your Company Name"
                 />
               </div>
@@ -164,7 +166,7 @@ export default function Contact() {
                   rows={5}
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-200 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors resize-none bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+                  className="w-full px-4 py-3 border border-gray-200 dark:border-[#30363d] rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors resize-none bg-white dark:bg-[#161b22] text-gray-900 dark:text-white"
                   placeholder="Tell us about your project..."
                 />
               </div>
@@ -173,9 +175,7 @@ export default function Contact() {
                 type="submit"
                 className="btn-primary inline-flex items-center gap-2 text-lg px-8 py-4 w-full sm:w-auto"
               >
-                <TextReveal className="text-white font-medium text-lg">
-                  Send Message
-                </TextReveal>
+                Send Message
                 <Send className="h-5 w-5" />
               </button>
             </form>
@@ -208,9 +208,9 @@ export default function Contact() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="flex items-start gap-4 p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md transition-shadow"
+                  className="flex items-start gap-4 p-6 bg-white dark:bg-[#161b22] rounded-2xl shadow-sm border border-gray-100 dark:border-[#30363d] hover:shadow-md transition-shadow"
                 >
-                  <div className="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary-100 dark:bg-[#0f1a24] rounded-full flex items-center justify-center flex-shrink-0">
                     <info.icon className="h-6 w-6 text-primary-600 dark:text-primary-400" />
                   </div>
                   <div>
@@ -232,7 +232,8 @@ export default function Contact() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="bg-gradient-to-r from-primary-600 to-primary-700 dark:from-primary-500 dark:to-primary-600 rounded-2xl p-8 text-white"
+              viewport={{ once: true }}
+              className="bg-gradient-to-r from-primary-600 to-primary-700 dark:from-[#0f1a24] dark:to-[#0e1720] rounded-2xl p-8 text-white"
             >
               <h4 className="text-xl font-bold mb-4">
                 Ready to Start Your Project?

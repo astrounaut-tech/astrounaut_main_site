@@ -45,7 +45,7 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 dark:bg-gray-950 text-white">
+    <footer className="bg-gray-900 dark:bg-[#0d1117] text-white">
       <div className="container-custom py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -117,7 +117,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 dark:border-gray-700 mt-12 pt-8 text-center text-gray-400 dark:text-gray-500">
+        <div className="border-t border-gray-800 dark:border-[#30363d] mt-12 pt-8 text-center text-gray-400 dark:text-gray-500">
           <p>&copy; 2024 Astrounaut. All rights reserved.</p>
         </div>
       </div>
