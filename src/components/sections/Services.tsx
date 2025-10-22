@@ -11,6 +11,7 @@ import {
   Zap,
   ArrowRight,
 } from 'lucide-react';
+import StarryBackground from '../common/StarryBackground';
 
 const services = [
   {
@@ -86,8 +87,9 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="section-padding bg-gradient-to-br from-primary-50 to-white dark:from-[#0b0f14] dark:to-[#0b0f14]"
+      className="relative section-padding bg-gradient-to-br from-primary-50 to-white dark:from-[#0b0f14] dark:to-[#0b0f14]"
     >
+      <StarryBackground starCount={150} largeStarCount={0} />
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

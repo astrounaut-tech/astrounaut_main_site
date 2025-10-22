@@ -25,6 +25,7 @@ import {
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { TextReveal } from '@/components/common/TextReveal';
+import StarryBackground from '../common/StarryBackground';
 
 const categories = [
   { id: 'all', name: 'All', icon: Filter, color: 'from-gray-500 to-gray-600' },
@@ -241,6 +242,7 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-white dark:bg-[#0d1117]">
       <section className="relative section-padding bg-gradient-to-br from-primary-50 to-white dark:from-[#0b0f14] dark:to-[#0b0f14] overflow-hidden">
+        <StarryBackground starCount={150} largeStarCount={0} />
         <div className="container-custom relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

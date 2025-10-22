@@ -3,6 +3,7 @@
 
 import { motion } from 'framer-motion';
 import { Users, Target, Award, Heart } from 'lucide-react';
+import StarryBackground from '../common/StarryBackground';
 
 const features = [
   {
@@ -33,7 +34,11 @@ const features = [
 
 export default function About() {
   return (
-    <section id="about" className="section-padding bg-white dark:bg-[#0b0f14] ">
+    <section
+      id="about"
+      className="section-padding bg-white dark:bg-[#0b0f14] relative"
+    >
+        <StarryBackground starCount={100} largeStarCount={0}/>
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -46,8 +51,8 @@ export default function About() {
             About <span className="text-gradient">Astrounaut</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            We're a passionate team dedicated to helping businesses thrive in the
-            digital age. With innovative solutions and personalized service,
+            We're a passionate team dedicated to helping businesses thrive in
+            the digital age. With innovative solutions and personalized service,
             we're your trusted partner for success.
           </p>
         </motion.div>
