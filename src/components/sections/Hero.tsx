@@ -4,11 +4,13 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { TextReveal } from '@/components/common/TextReveal';
+import StarryBackground from '../common/StarryBackground';
 
 export default function Hero() {
   return (
-    <section className="relative bg-gradient-to-br from-primary-50 to-white dark:from-[#0b0f14] dark:to-[#0b0f14] section-padding">
-      <div className="container-custom">
+    <section className="relative bg-gradient-to-br from-primary-50 to-white dark:from-[#0b0f14] dark:to-[#0b0f14] section-padding overflow-hidden">
+      <StarryBackground starCount={100} largeStarCount={0} />
+      <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
